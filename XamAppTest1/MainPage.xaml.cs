@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+using XamAppTest1.ViewModels;
 using Xamarin.Forms;
 
 namespace XamAppTest1
@@ -16,6 +12,7 @@ namespace XamAppTest1
         public MainPage()
         {
             InitializeComponent();
+            this.BindingContext = new MainViewModel();
         }
     }
 }
